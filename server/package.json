@@ -1,0 +1,49 @@
+{
+  "name": "automateeasy-server",
+  "version": "1.0.0",
+  "description": "Backend API for AutomateEasy SaaS platform",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --detectOpenHandles",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "migrate": "knex migrate:latest",
+    "migrate:make": "knex migrate:make",
+    "migrate:rollback": "knex migrate:rollback",
+    "seed": "knex seed:run",
+    "seed:make": "knex seed:make"
+  },
+  "keywords": [
+    "automation",
+    "saas",
+    "make.com",
+    "api"
+  ],
+  "author": "AutomateEasy Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.1.5",
+    "jsonwebtoken": "^9.0.0",
+    "knex": "^2.5.1",
+    "morgan": "^1.10.0",
+    "objection": "^3.1.5",
+    "pg": "^8.15.6",
+    "pg-connection-string": "^2.6.2",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
